@@ -25,7 +25,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
       <NextLink href={href} passHref scroll={false}>
         <Link
           p={2}
-          bg={active ? 'grassTeal' : undefined}
+          bg={active ? 'var(--chakra-colors-orange-200)' : undefined}
           color={active ? '#202023' : inactiveColor}
           target={target}
           {...props}
@@ -51,7 +51,6 @@ const Navbar = props => {
         >
             <Container
                 display="flex"
-                p={2}
                 maxW="container.md"
                 wrap="wrap"
                 align="center"
@@ -80,7 +79,7 @@ const Navbar = props => {
                 </Stack>
                 <Box flex={1} align="right">
                      
-                    <ThemeToggleButton />
+                    
 
                     <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
                         <Menu isLazy id="navbar-menu">

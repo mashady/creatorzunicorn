@@ -4,11 +4,13 @@
   "description": "peronal website",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
     "start": "next start",
     "prettier": "prettier --write .",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -20,12 +22,15 @@
   "bugs": {
     "url": "https://github.com/mashady/creatorzunicorn/issues"
   },
-  "homepage": "https://github.com/mashady/creatorzunicorn#readme",
+  "homepage": "https://mashady.github.com/creatorzunicorn",
   "dependencies": {
     "@chakra-ui/icons": "^2.0.4",
     "@chakra-ui/react": "^2.2.4",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
+    "@fortawesome/fontawesome-svg-core": "^6.1.2",
+    "@fortawesome/free-solid-svg-icons": "^6.1.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "framer-motion": "^6.5.1",
     "next": "^12.2.3",
     "react": "^18.2.0",
@@ -35,6 +40,7 @@
   "devDependencies": {
     "eslint": "^8.20.0",
     "eslint-config-next": "^12.2.3",
+    "gh-pages": "^4.0.0",
     "prettier": "^2.7.1"
   }
 }
