@@ -20,7 +20,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import {GridItem} from '../components/grid-item'
-import thumbWork from '../public/angel_pic/inkdrop-banner.jpg'
+import thumbWork from '../public/angel_pic/fingers.jpg'
 
 const Home = () =>(
     <Layout>
@@ -85,33 +85,60 @@ const Home = () =>(
                     Feature work
                 </Heading>
                 <SimpleGrid columns={[1, 2]} gap={12}>
-                    <GridItem
-                        href="https://www.inkdrop.app/"
-                        title="Inkdrop"
-                        thumbnail={thumbWork}
-                    >
-                    </GridItem>
-                    <GridItem
-                        href="https://www.inkdrop.app/"
-                        title="Inkdrop"
-                        thumbnail={thumbWork}
-                    >
-
-                    </GridItem>
-                    <GridItem
-                        href="https://www.inkdrop.app/"
-                        title="Inkdrop"
-                        thumbnail={thumbWork}
-                    >
-                        
-                    </GridItem>
-                    <GridItem
-                        href="https://www.inkdrop.app/"
-                        title="Inkdrop"
-                        thumbnail={thumbWork}
-                    >
-                        
-                    </GridItem>
+                    <Box w="100%" position="relative" className='postBox'>
+                        <Image 
+                            src="/angel_pic/fingers.jpg"
+                            alt="none"
+                            className="grid-item-thumbnail"
+                            placeholder="blur"
+                            loading="lazy"
+                        />
+                        title of the project
+                        <Box className='my-overlay'>
+                            <Box
+                                borderRadius="lg"
+                                mb={6}
+                                mt={6}
+                                p={3}
+                                textAlign="center"
+                                backgroundColor="#202023"
+                                color="#FFF"
+                                css={{ backdropFilter: 'blur(10px)' }}
+                            >
+                                project title
+                            </Box>
+                            <Button variant="sction-buton" color="var(--chakra-colors-orange-300)"  rightIcon={<ArrowForwardIcon />} colorScheme="orange">
+                                demo
+                            </Button>
+                        </Box>
+                    </Box>
+                    <Box w="100%">
+                        <Image 
+                            src="/angel_pic/fingers.jpg"
+                            alt="none"
+                            className="grid-item-thumbnail"
+                            placeholder="blur"
+                            loading="lazy"
+                        />
+                    </Box>
+                    <Box w="100%">
+                        <Image 
+                            src="/angel_pic/fingers.jpg"
+                            alt="none"
+                            className="grid-item-thumbnail"
+                            placeholder="blur"
+                            loading="lazy"
+                        />
+                    </Box>
+                    <Box w="100%">
+                        <Image 
+                            src="/angel_pic/fingers.jpg"
+                            alt="none"
+                            className="grid-item-thumbnail"
+                            placeholder="blur"
+                            loading="lazy"
+                        />
+                    </Box>
                 </SimpleGrid>
             </Section>
         </Container>
