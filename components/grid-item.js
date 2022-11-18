@@ -30,6 +30,7 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
         <Image
           src={thumbnail}
           alt={title}
+          // we will edit all the styles here.
           className="grid-item-thumbnail"
           placeholder="blur"
           
@@ -47,12 +48,20 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
 
 export const GridItemStyle = () => (
   <Global
-    styles={`
+    styles={
+      `
       .grid-item-thumbnail {
         border-radius: 12px;
         height:240px!important;
         -webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
+      }
+      .grid-item-thumbnail .arrowIcon{
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+      }
+      .grid-item-thumbnail:hover .arrowIcon{
+        color:orange;
       }
       .my-overlay{
         position: absolute;
@@ -81,13 +90,34 @@ export const GridItemStyle = () => (
       .postBox:hover .grid-item-thumbnail{
         opacity:0.5;
       }
+      .postBox:hover .arrowIcon{
+       
+        
+      }
       .postBox:hover .my-overlay{
         opacity:1;
         -webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
       }
       
-      
-    `}
+      .postCover{
+
+      }
+      .postCover:hover{
+        opacity:0.5;
+      }
+      .sidenav{
+        color:red;
+        height: 100%; /* 100% Full-height */
+        z-index: 1; /* Stay on top */
+        top: 0; /* Stay at the top */
+        left: 0;
+        background-color: #111!important; /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+      }
+    `
+      }
   />
 )
