@@ -66,7 +66,7 @@ const Home = () =>(
                 </Paragraph>
                 <Box align="center" my={4}>
                     <NextLink href="/works" passHref scroll={false}>
-                        <Button variant="sction-buton" color="var(--chakra-colors-orange-300)"  rightIcon={<ArrowForwardIcon />} colorScheme="orange">
+                        <Button variant="sction-buton" color="var(--chakra-colors-orange-200)"  rightIcon={<ArrowForwardIcon />} colorScheme="orange">
                         My portfolio
                         </Button>
                     </NextLink>
@@ -96,6 +96,7 @@ const Home = () =>(
                                 placeholder="blur"
                                 loading="lazy"
                                 mb=".5rem"
+                                fit='cover'
                             />
                             title of the project
 
