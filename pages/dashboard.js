@@ -15,6 +15,7 @@ import {
 } from '@chakra-ui/react'
 import { ArrowForwardIcon, AddIcon, EditIcon } from '@chakra-ui/icons'
 import { WorkGridItem } from '../components/grid-item'
+import InitialFocus from '../components/modal'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 
@@ -23,7 +24,6 @@ const Dashboard = () => (
             <Heading ml="3rem" mt="2rem" mb="1rem">
                 Dashboard
             </Heading>
-
             
 
             <Tabs isFitted isLazy ml="3rem">
@@ -35,26 +35,19 @@ const Dashboard = () => (
                 
                 <TabPanels>
                     <TabPanel padding="0">
-                    <Button
-                        leftIcon={<AddIcon />}
-                        mb="1rem" 
-                        mt="1rem" 
-                        padding="1rem 1.5rem"
-                    >
-                        New Post
-                    </Button>        
+                    <InitialFocus></InitialFocus>    
                         <SimpleGrid columns={[1, 2, 3]} gap={12}>
                             <Box cursor="pointer" w="100%" position="relative" className='postBox'>
                                 <LinkOverlay href={`/works/`}>
-                                    <Image 
-                                        src="/angel_pic/fingers.jpg"
-                                        alt="none"
-                                        className="grid-item-thumbnail"
-                                        placeholder="blur"
-                                        loading="lazy"
-                                        mb=".5rem"
-                                        fit="cover"
-                                    />
+                                        <Image 
+                                            src="/angel_pic/fingers.jpg"
+                                            alt="none"
+                                            className="grid-item-thumbnail"
+                                            placeholder="blur"
+                                            loading="lazy"
+                                            mb=".5rem"
+                                            fit="cover"
+                                        />
                                     title of the project
 
                                     <ArrowForwardIcon
@@ -114,14 +107,15 @@ const Dashboard = () => (
 
                     </TabPanel>
                     <TabPanel padding="0">
-                    <Button
-                        leftIcon={<AddIcon />}
-                        mb="1rem" 
-                        mt="1rem" 
-                        padding="1rem 1.5rem"
-                    >
-                        New Item
-                    </Button> 
+                    <Button 
+            leftIcon={<AddIcon />}
+            mb="1rem" 
+            mt="1rem" 
+            padding="1rem 1.5rem"
+        >   
+                    <LinkOverlay href={`/new-item/`}>New Item</LinkOverlay>
+
+        </Button>  
                     <SimpleGrid columns={[1, 2, 3]} gap={12}>
                             <Box cursor="pointer" w="100%" position="relative" className='postBox'>
                                 <LinkOverlay href={`/works/`}>
