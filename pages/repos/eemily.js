@@ -20,12 +20,12 @@ import { ExternalLinkIcon } from '@chakra-ui/icons'
 import P from '../../components/paragraph'
 
 const Work = () => (
-  <Layout title="item-1">
+  <Layout title="eemily">
     <Container>
       <Box>
         <Image
-          src="/angel_pic/introBG.JPGg"
-          alt="intro background"
+          src="/images/eemily-project/eemily-mock.png"
+          alt="a"
           loading="lazy"
           objectFit="cover"
           borderRadius="lg"
@@ -33,19 +33,17 @@ const Work = () => (
         />
       </Box>
       <Heading mt="5" as="h5">
-        title
+        Eemily
       </Heading>
       <Paragraph mt="10">
-        mashady is a full-stack web developer, but not just a developer, an
-        artist who draw a painting, spaceman who swin into the hall. that is
-        what the code meant to me. Fall in love with technologies and smart
-        things ❤
+        One page template and business website for servers and internet
+        solutions.
       </Paragraph>
       <Text mt="5">
         <Badge mr="2" fontSize="0.8em" colorScheme="green">
           technologies
         </Badge>
-        reactjs, html5
+        html5, css3, javascript and bootstrap
       </Text>
       <Text>
         <Badge mr="2" fontSize="0.8em" colorScheme="orange">
@@ -54,15 +52,15 @@ const Work = () => (
         <Link
           textDecoration="underline"
           color="red.400"
-          href="https://github.com/mashady/creatorzunicorn"
+          href="https://github.com/mashady/eemily"
           fontStyle="italic"
         >
-          https://github.com/mashady/creatorzunicorn
+          https://github.com/mashady/eemily
         </Link>
       </Text>
       <Box>
         <Image
-          src="/angel_pic/introBG.JPGg"
+          src="/images/eemily-project/emily-top-part.jpg"
           alt="projct screen 1"
           loading="lazy"
           objectFit="cover"
@@ -72,7 +70,7 @@ const Work = () => (
       </Box>
       <Box>
         <Image
-          src="/angel_pic/introBG.JPGg"
+          src="/images/eemily-project/emily-middle-part.jpg"
           alt="projct screen 2"
           loading="lazy"
           objectFit="cover"
