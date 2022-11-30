@@ -20,8 +20,8 @@ import Section from '../components/section'
 
 import itemOne from '../public/angel_pic/fingers.jpg'
 
-const Works = () => (
-  <Layout title="Works">
+const Repos = () => (
+  <Layout title="Repos">
     <Container>
       <Heading mb="2" as="h3">
         repos
@@ -52,4 +52,4 @@ const Works = () => (
   </Layout>
 )
 
-export default Works
+export default Repos
