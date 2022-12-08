@@ -2,22 +2,13 @@ import {
   Container,
   Badge,
   Link,
-  List,
-  ListItem,
-  SimpleGrid,
-  UnorderedList,
   Heading,
-  Center,
   Image,
   Box,
-  Text,
-  LinkOverlay
+  Text
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import Paragraph from '../../components/paragraph'
-
-import { ExternalLinkIcon } from '@chakra-ui/icons'
-import P from '../../components/paragraph'
 
 const Work = () => (
   <Layout title="eemily">

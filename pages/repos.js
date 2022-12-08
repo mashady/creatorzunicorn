@@ -1,24 +1,13 @@
 import {
-  Link,
   Container,
   Heading,
   Box,
   SimpleGrid,
-  Button,
-  List,
-  ListItem,
-  useColorModeValue,
-  chakra,
   Image,
   LinkOverlay
 } from '@chakra-ui/react'
 import { ArrowForwardIcon } from '@chakra-ui/icons'
-
-import { WorkGridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
-import Section from '../components/section'
-
-import itemOne from '../public/angel_pic/fingers.jpg'
 
 const Repos = () => (
   <Layout title="Repos">
